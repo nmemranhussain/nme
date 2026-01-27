@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N M Emran Hussain | Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%); }
+        .project-card:hover { border-color: #60a5fa; transform: translateY(-4px); }
+        section { scroll-margin-top: 80px; }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30">
 
+<nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <span class="text-xl font-bold tracking-tighter gradient-text">NMEH.ANALYTICS</span>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+            <a href="#about" class="hover:text-blue-400 transition-colors">Expertise</a>
+            <a href="#projects" class="hover:text-blue-400 transition-colors">Impact</a>
+            <a href="#experience" class="hover:text-blue-400 transition-colors">History</a>
+            <a href="#education" class="hover:text-blue-400 transition-colors">Credentials</a>
+        </div>
+        <a href="mailto:nmemran.hussain@gwu.edu" class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full text-sm font-bold transition-all">Hire Me</a>
+    </div>
+</nav>
+
+<main class="hero-gradient">
+    <section id="about" class="pt-32 pb-20 container mx-auto px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <img src="https://lh3.googleusercontent.com/photos-askphotos/ADXD8N1QAtmM3M9kFi0kRLLUDIpNBGBMfUN9GNoQ8x6V2kZWgvPRfu3f4OurrWYvkJLw=fcrop64=1,791202e2ffffffff" class="relative w-64 h-64 rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" alt="N M Emran Hussain">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Data Scientist <br><span class="gradient-text">& Business Strategist</span></h1>
+                <p class="text-lg text-slate-400 leading-relaxed mb-8 max-w-2xl">
+                    [cite: 67, 91] MSBA candidate at George Washington University with a specialization in AI-driven revenue growth. I build RAG-based systems and predictive models that translate raw data into multi-million dollar business outcomes.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <div class="px-4 py-2 glass rounded-lg border-white/10 flex items-center gap-2">
+                        <i class="fab fa-python text-blue-400"></i> <span class="text-sm font-semibold">Python / Polars</span>
+                    </div>
+                    <div class="px-4 py-2 glass rounded-lg border-white/10 flex items-center gap-2">
+                        <i class="fas fa-brain text-purple-400"></i> <span class="text-sm font-semibold">Responsible AI</span>
+                    </div>
+                    <div class="px-4 py-2 glass rounded-lg border-white/10 flex items-center gap-2">
+                        <i class="fas fa-microchip text-blue-400"></i> <span class="text-sm font-semibold">LLMs / RAG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">High-Impact <span class="text-blue-400">Analytics</span></h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-3xl project-card transition-all duration-300 border border-white/5">
+                <div class="text-blue-500 text-4xl mb-4 font-extrabold tracking-tighter">33%</div>
+                <h3 class="text-xl font-bold mb-2">Churn Prevention</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">[cite: 91, 93] Developed a RAG-based AI system cutting e-commerce churn, resulting in a **$2M revenue uplift**.</p>
+                <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">Natural Language Processing</span>
+            </div>
+            <div class="glass p-8 rounded-3xl project-card transition-all duration-300 border border-white/5">
+                <div class="text-purple-500 text-4xl mb-4 font-extrabold tracking-tighter">87.4%</div>
+                <h3 class="text-xl font-bold mb-2">IMDb Sentiment</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">[cite: 94, 98] Built a FastText pipeline for 50k reviews, using Autotune to boost sentiment accuracy significantly.</p>
+                <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">Machine Learning Pipeline</span>
+            </div>
+            <div class="glass p-8 rounded-3xl project-card transition-all duration-300 border border-white/5">
+                <div class="text-blue-500 text-4xl mb-4 font-extrabold tracking-tighter">85%</div>
+                <h3 class="text-xl font-bold mb-2">Demand Forecasting</h3>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">[cite: 106, 109] Scaled pipelines for 3M+ bike ride records to forecast peak-hour demand for Capital Bikeshare.</p>
+                <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">Big Data / Forecasting</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl font-bold mb-12 text-center">Leadership <span class="text-purple-400">Experience</span></h2>
+        <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-blue-400 absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10">
+                    <i class="fas fa-briefcase text-xs"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[45%] glass p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-1">
+                        <time class="font-mono text-xs text-blue-400">[cite: 110, 113] 2019</time>
+                    </div>
+                    <h4 class="font-bold text-lg">CEO & Founder</h4>
+                    <p class="text-slate-500 text-xs mb-3 uppercase">Ampere Ltd.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">[cite: 114] Drove 13% revenue increase and 10% market share growth via statistical supply chain optimization.</p>
+                </div>
+            </div>
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 text-purple-400 absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10">
+                    <i class="fas fa-chart-line text-xs"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[45%] glass p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-1">
+                        <time class="font-mono text-xs text-purple-400">[cite: 119] 2009 - 2018</time>
+                    </div>
+                    <h4 class="font-bold text-lg">Assistant Manager</h4>
+                    <p class="text-slate-500 text-xs mb-3 uppercase">Anrhus & Shuzos Co.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">[cite: 120] Managed a $1M real estate project and reduced costs by 9% using statistical KPI modeling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-slate-950/50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold mb-12 text-center">Academic <span class="text-blue-400">Foundation</span></h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 glass rounded-3xl border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold mb-1">MS Business Analytics</h3>
+                    <p class="text-blue-400 font-semibold text-sm mb-4">George Washington University | GPA 3.47</p>
+                    <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Key Focus</p>
+                    <p class="text-slate-400 text-sm mt-2">[cite: 67, 69] AI in Marketing, Big Data, Text Analytics, Responsible ML.</p>
+                </div>
+                <div class="p-8 glass rounded-3xl border-l-4 border-slate-700">
+                    <h3 class="text-xl font-bold mb-1">MBA (Marketing)</h3>
+                    <p class="text-slate-400 font-semibold text-sm mb-4">North South University | GPA 3.26</p>
+                    <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Key Focus</p>
+                    <p class="text-slate-400 text-sm mt-2">[cite: 72, 74] Marketing Research, Strategy, and Brand Management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 border-t border-white/5 bg-slate-950">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="text-center md:text-left">
+            <h2 class="text-2xl font-bold tracking-tighter mb-2">Let's Connect.</h2>
+            <div class="flex gap-4 text-slate-400 text-xl justify-center md:justify-start">
+                <a href="https://linkedin.com/in/nmeh" class="hover:text-blue-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nmemranhussain" class="hover:text-blue-400 transition-colors"><i class="fab fa-github"></i></a>
+                <a href="mailto:nmemran.hussain@gwu.edu" class="hover:text-blue-400 transition-colors"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="text-center md:text-right text-slate-500 text-sm">
+            <p>Interests: "The Art of War", Biking, Hiking, & AI Fitness [cite: 124]</p>
+            <p class="mt-2">© 2026 N M Emran Hussain. Los Altos, CA [cite: 64]</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
