@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N M Emran Hussain - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; color: #1f2937; scroll-behavior: smooth; }
+        .container-section { padding-top: 4rem; padding-bottom: 4rem; }
+        .section-heading { border-bottom: 2px solid #e5e7eb; padding-bottom: 1rem; margin-bottom: 2rem; }
+        .card { background-color: #ffffff; border-radius: 1.5rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #2563eb, #1e40af); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-100">
 
+<nav class="bg-white shadow-lg py-4 sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href="#about" class="text-xl font-bold text-gray-800">N M EMRAN HUSSAIN</a>
+        <div class="hidden lg:flex space-x-6">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+            <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+            <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </div>
+        <button id="menu-btn" class="lg:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden flex flex-col p-4 space-y-2 lg:hidden bg-white border-t">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section id="about" class="container-section container mx-auto px-4">
+    <div class="card p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-12">
+        <img class="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-white" src="https://media.licdn.com/dms/image/v2/D4E03AQFLKWjEThICAg/profile-displayphoto-shrink_400_400/0/1720152621014?e=1743033600&v=beta&t=7u7u5o_K4z-6DOnV-Q-V8-t53JpXN7S_rX-F7E6P3zU" alt="Profile">
+        <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-extrabold mb-4">N M EMRAN HUSSAIN</h1>
+            <p class="text-xl text-blue-600 font-semibold mb-4">Data Scientist & Business Analyst</p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">Results-driven professional applying Machine Learning, Deep Learning, and advanced analytics to solve complex business problems. Proficient in Python, R, SQL, and AWS.</p>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                <a href="https://linkedin.com/in/nmeh" class="text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nmemranhussain" class="text-gray-900 text-2xl"><i class="fab fa-github"></i></a>
+                <a href="mailto:nmemran.hussain@gwu.edu" class="text-red-600 text-2xl"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container-section container mx-auto px-4">
+    <h2 class="text-3xl font-bold section-heading text-gradient">Technical Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card p-6">
+            <h3 class="font-bold text-lg mb-2"><i class="fas fa-code mr-2 text-blue-500"></i>Programming</h3>
+            <p class="text-gray-600">Python (Pandas, Scikit-learn, TensorFlow), SQL, R (Tidyverse).</p>
+        </div>
+        <div class="card p-6">
+            <h3 class="font-bold text-lg mb-2"><i class="fas fa-brain mr-2 text-purple-500"></i>AI & ML</h3>
+            <p class="text-gray-600">Generative AI, LLMs (RAG), Transformers, Deep Learning, NLP.</p>
+        </div>
+        <div class="card p-6">
+            <h3 class="font-bold text-lg mb-2"><i class="fas fa-chart-line mr-2 text-green-500"></i>Business Analytics</h3>
+            <p class="text-gray-600">Power BI, Tableau, A/B Testing, Churn Prediction, ROI Analysis.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="container-section container mx-auto px-4">
+    <h2 class="text-3xl font-bold section-heading text-gradient">Featured Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card p-6">
+            <h3 class="text-xl font-bold mb-2">E-commerce Churn Prevention</h3>
+            <p class="text-gray-600 mb-4">Slashed annual churn from 62% to 29%, driving a $2M revenue uplift using LinUCB Bandits and RAG-based bots.</p>
+            <a href="#" class="text-blue-600 font-semibold">View Project <i class="fas fa-external-link-alt ml-1"></i></a>
+        </div>
+        <div class="card p-6">
+            <h3 class="text-xl font-bold mb-2">NLP Sentiment Optimization</h3>
+            <p class="text-gray-600 mb-4">Engineered a pipeline boosting IMDb accuracy to 87.4% using FastText Autotune and N-grams.</p>
+            <a href="#" class="text-blue-600 font-semibold">View Project <i class="fas fa-external-link-alt ml-1"></i></a>
+        </div>
+        <div class="card p-6">
+            <h3 class="text-xl font-bold mb-2">Capital Bikeshare Analytics</h3>
+            <p class="text-gray-600 mb-4">Built data pipelines for 3M+ records to forecast peak-hour demand with 85% accuracy.</p>
+            <a href="#" class="text-blue-600 font-semibold">View Project <i class="fas fa-external-link-alt ml-1"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container-section container mx-auto px-4 text-center">
+    <div class="card p-12">
+        <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+        <p class="text-lg text-gray-600 mb-8">Available for Data Science and Business Analytics opportunities.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+            <a href="tel:4086200255" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Call Me</a>
+            <a href="mailto:nmemran.hussain@gwu.edu" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 transition">Email Me</a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-800 text-white py-8 text-center mt-12">
+    <p>© 2026 N M Emran Hussain. All rights reserved.</p>
+</footer>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
+</script>
+
+</body>
+</html>
